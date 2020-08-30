@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TIC TAC TOE</title>
+        <style>
+            body{
+                background-color : #d3d3d3 ;
+                /* background-size : cover ;
+                background-position : center center ; */
+            }
+            #playerdetails{
+                width : fit-content ;
+                margin : 30px auto ;
+                text-align: center;
+            }
+            td , tr {
+                border:5px double black ;
+            }
+            td{
+                height : 120px ;
+                width : 120px ;
+                font-size: 45px ;
+                font-weight: 1000;
+            }
+            td:hover{
+                cursor:pointer ;
+            }
+
+            #turn1 , #turn2 {
+                font-size: inherit;
+            }
+            
+            span{
+                font-size: 35px;
+            }
+            table{
+                
+                margin : 20px auto ;
+                vertical-align: middle;
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="playerdetails">
+            <h1>****Welcome To TIC TAC TOE*****</h1>
+            <h1>Player 1 : <span>'X'</span><span id = "turn1">  <=  Turn</span></h2>
+            <h1>Player 2 : <span>'O'</span><span id = "turn2">  <=  Turn</span></h2>
+        </div>
+        <table>
+            <tr>
+                <td onclick="boxClicked('p1')" id = "p1">1</td>
+                <td onclick="boxClicked('p2')" id = "p2">2</td>
+                <td onclick="boxClicked('p3')" id = "p3">3</td>
+            </tr>
+            <tr>
+                <td onclick="boxClicked('p4')" id = "p4">4</td>
+                <td onclick="boxClicked('p5')" id = "p5">5</td>
+                <td onclick="boxClicked('p6')" id = "p6">6</td>
+            </tr>
+            <tr>
+                <td onclick="boxClicked('p7')" id = "p7">7</td>
+                <td onclick="boxClicked('p8')" id = "p8">8</td>
+                <td onclick="boxClicked('p9')" id = "p9">9</td>
+            </tr>
+        </table>
+        <script src = "index.js"></script>
+    </body>
+</html>
